@@ -80,28 +80,32 @@
   .sz-card.active .rdot::after{content:'';width:7px;height:7px;background:#fff;border-radius:50%}
 
   /* MENU */
-  .mw{max-width:480px;margin:0 auto;padding:16px 18px 130px}
-  .mhd{font-weight:900;font-size:17px;color:var(--tx);margin-bottom:14px;display:flex;align-items:center;gap:8px}
-  .mhd::after{content:'';flex:1;height:2px;background:linear-gradient(to left,transparent,var(--or));border-radius:2px}
-  .ic{background:var(--wh);border-radius:20px;overflow:hidden;margin-bottom:14px;display:flex;min-height:128px;box-shadow:0 4px 18px rgba(0,0,0,.08);transition:transform .2s,box-shadow .2s;animation:up .45s ease both}
-  .ic:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.12)}
-  .ic:nth-child(1){animation-delay:.05s}.ic:nth-child(2){animation-delay:.12s}.ic:nth-child(3){animation-delay:.19s}
-  @keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-  .ith{width:110px;min-width:110px;background:linear-gradient(135deg,#FDEBD6,#F8D5B8);display:flex;align-items:center;justify-content:center;font-size:52px}
-  .ib{flex:1;padding:14px 14px 12px;display:flex;flex-direction:column;justify-content:space-between}
-  .inm{font-weight:900;font-size:16px;line-height:1.25;margin-bottom:4px}
-  .ids{font-size:11.5px;color:var(--mu);font-weight:600;line-height:1.55;margin-bottom:8px}
-  .ifoot{display:flex;align-items:center;justify-content:space-between;gap:8px}
-  .pb{display:flex;flex-direction:column}
-  .pm{font-family:'Poppins',sans-serif;font-weight:800;font-size:19px;color:var(--or);line-height:1}
-  .pu{font-size:10px;color:var(--mu);font-weight:600}
-  .addb{background:var(--or);color:#fff;border:none;border-radius:50px;padding:8px 16px;font-family:'Cairo',sans-serif;font-weight:700;font-size:13px;cursor:pointer;box-shadow:0 4px 12px rgba(232,90,26,.3);transition:all .2s;white-space:nowrap}
-  .addb:hover{background:var(--ord)}.addb:active{transform:scale(.96)}
-  .qr{display:flex;align-items:center;background:#FFF5EF;border:2px solid var(--or);border-radius:50px;overflow:hidden}
-  .qb{background:none;border:none;width:34px;height:34px;font-size:20px;font-weight:700;color:var(--or);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s}
-  .qb:hover{background:rgba(232,90,26,.1)}
-  .qn{font-weight:900;font-size:15px;min-width:26px;text-align:center}
+ .mw{max-width:480px;margin:0 auto;padding:16px 18px 130px}
+.mhd{font-weight:900;font-size:17px;color:var(--tx);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.mhd::after{content:'';flex:1;height:2px;background:linear-gradient(to left,transparent,var(--or));border-radius:2px}
+.ic{background:var(--wh);border-radius:20px;overflow:hidden;margin-bottom:14px;display:flex;min-height:128px;box-shadow:0 4px 18px rgba(0,0,0,.08);transition:transform .2s,box-shadow .2s;animation:up .45s ease both}
+.ic:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.12)}
+.ic:nth-child(1){animation-delay:.05s}.ic:nth-child(2){animation-delay:.12s}.ic:nth-child(3){animation-delay:.19s}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.ith{width:110px;min-width:110px;background:linear-gradient(135deg,#FDEBD6,#F8D5B8);display:flex;align-items:center;justify-content:center}
+/* image inside the icon container */
+.ith img{width:52px;height:52px;object-fit:contain}
+.ib{flex:1;padding:14px 14px 12px;display:flex;flex-direction:column;justify-content:space-between}
+.inm{font-weight:900;font-size:16px;line-height:1.25;margin-bottom:4px}
+.ids{font-size:11.5px;color:var(--mu);font-weight:600;line-height:1.55;margin-bottom:8px}
+.ifoot{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.pb{display:flex;flex-direction:column}
+.pm{font-family:'Poppins',sans-serif;font-weight:800;font-size:19px;color:var(--or);line-height:1}
+.pu{font-size:10px;color:var(--mu);font-weight:600}
+.addb{background:var(--or);color:#fff;border:none;border-radius:50px;padding:8px 16px;font-family:'Cairo',sans-serif;font-weight:700;font-size:13px;cursor:pointer;box-shadow:0 4px 12px rgba(232,90,26,.3);transition:all .2s;white-space:nowrap}
+.addb:hover{background:var(--ord)}.addb:active{transform:scale(.96)}
+.qr{display:flex;align-items:center;background:#FFF5EF;border:2px solid var(--or);border-radius:50px;overflow:hidden}
+.qb{background:none;border:none;width:34px;height:34px;font-size:20px;font-weight:700;color:var(--or);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s}
+.qb:hover{background:rgba(232,90,26,.1)}
+.qn{font-weight:900;font-size:15px;min-width:26px;text-align:center}
 
+/* image inside the menu header */
+.mhd img{width:24px;height:24px;vertical-align:middle;object-fit:contain}
   /* FLOAT BAR */
   .fb{position:fixed;bottom:18px;left:18px;right:18px;max-width:444px;margin:0 auto;background:var(--or);border-radius:18px;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;color:#fff;cursor:pointer;box-shadow:0 8px 28px rgba(232,90,26,.45);z-index:190;transform:translateY(120px);opacity:0;transition:transform .35s cubic-bezier(.4,0,.2,1),opacity .35s}
   .fb.show{transform:translateY(0);opacity:1}
@@ -255,11 +259,18 @@
 
 <!-- MENU -->
 <div class="mw">
-  <div class="mhd">🍽️ القائمة</div>
+  <div class="mhd">
+    <img src="images/menu-icon.png" alt="أيقونة القائمة" class="icon-img"> القائمة
+  </div>
   <div class="ic">
-    <div class="ith">🍗</div>
+    <div class="ith">
+      <img src="images/chicken-icon.png" alt="دجاج" class="icon-img">
+    </div>
     <div class="ib">
-      <div><div class="inm">وجبة ريزو كريسبي</div><div class="ids">أرز بسمتي مدخن، مع دجاج مقلي مفرمش وصوص سموكي.</div></div>
+      <div>
+        <div class="inm">وجبة ريزو كريسبي</div>
+        <div class="ids">أرز بسمتي مدخن، مع دجاج مقلي مفرمش وصوص سموكي.</div>
+      </div>
       <div class="ifoot">
         <div class="pb"><span class="pm" id="pr0">15.00</span><span class="pu">د.ل</span></div>
         <div id="ctrl0"><button class="addb" onclick="addItem(0)">+ أضف</button></div>
@@ -267,9 +278,14 @@
     </div>
   </div>
   <div class="ic">
-    <div class="ith">🥩</div>
+    <div class="ith">
+      <img src="images/meat-icon.png" alt="لحم كبدة" class="icon-img">
+    </div>
     <div class="ib">
-      <div><div class="inm">وجبة ريزو كبدة</div><div class="ids">أرز بسمتي مدخن، مع كبدة اسكندراني وحذنار طازج وصوص سموكي.</div></div>
+      <div>
+        <div class="inm">وجبة ريزو كبدة</div>
+        <div class="ids">أرز بسمتي مدخن، مع كبدة اسكندراني وحذنار طازج وصوص سموكي.</div>
+      </div>
       <div class="ifoot">
         <div class="pb"><span class="pm" id="pr1">30.00</span><span class="pu">د.ل</span></div>
         <div id="ctrl1"><button class="addb" onclick="addItem(1)">+ أضف</button></div>
@@ -277,9 +293,14 @@
     </div>
   </div>
   <div class="ic">
-    <div class="ith">🌮</div>
+    <div class="ith">
+      <img src="images/mexican-icon.png" alt="مكسيكي" class="icon-img">
+    </div>
     <div class="ib">
-      <div><div class="inm">وجبة ريزو مكسيكي</div><div class="ids">أرز بسمتي مدخن، مع دجاج فاهيتا مشوي وصوص سموكي.</div></div>
+      <div>
+        <div class="inm">وجبة ريزو مكسيكي</div>
+        <div class="ids">أرز بسمتي مدخن، مع دجاج فاهيتا مشوي وصوص سموكي.</div>
+      </div>
       <div class="ifoot">
         <div class="pb"><span class="pm" id="pr2">15.00</span><span class="pu">د.ل</span></div>
         <div id="ctrl2"><button class="addb" onclick="addItem(2)">+ أضف</button></div>
@@ -287,7 +308,6 @@
     </div>
   </div>
 </div>
-
 <!-- FLOAT BAR -->
 <div class="fb" id="floatBar" onclick="openCart()">
   <div class="fl">
