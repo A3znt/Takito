@@ -89,7 +89,11 @@
 @keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 .ith{width:110px;min-width:110px;background:linear-gradient(135deg,#FDEBD6,#F8D5B8);display:flex;align-items:center;justify-content:center}
 /* image inside the icon container */
-.ith img{width:52px;height:52px;object-fit:contain}
+.ith img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* fills the box, cropping if needed */
+}
 .ib{flex:1;padding:14px 14px 12px;display:flex;flex-direction:column;justify-content:space-between}
 .inm{font-weight:900;font-size:16px;line-height:1.25;margin-bottom:4px}
 .ids{font-size:11.5px;color:var(--mu);font-weight:600;line-height:1.55;margin-bottom:8px}
